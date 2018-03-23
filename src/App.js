@@ -1,21 +1,32 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+
+import {Router, Route, Switch} from 'react-router-dom';
+import {createBrowserHistory} from 'history'
+import MainLayout from './components/MainLayout';
+
+import {Provider} from 'react-redux'
+import {createStore} from 'redux';
+import rootReducer from './reducers/index'
+const store = createStore(rootReducer);
+
+
+
+export const history = createBrowserHistory();
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Provider store={store}>
+        <Router history={history}>
+          <Switch>
+            <Route component={MainLayout} path="/"/>
+          </Switch>
+        </Router>
+      </Provider>
+
     );
   }
 }
 
-export default App;
+export  {App};
