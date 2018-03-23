@@ -6,7 +6,7 @@ import logo from '../assets/images/logo.png'
 const {Sider} = Layout;
 
 const SideBar = (props) => {
-  const goToStartupPage = (obj) => {
+  const goToStarwarsPage = (obj) => {
     if (obj.key === '1') {
       history.push(`/people`)
     }
@@ -51,7 +51,7 @@ const SideBar = (props) => {
       <Menu theme="dark"
             mode="inline"
             defaultSelectedKeys={['1']}
-            onSelect={goToStartupPage}
+            onSelect={goToStarwarsPage}
             selectedKeys={
               [getSelectedKeys()]
             }
