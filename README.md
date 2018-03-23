@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1. [ReactJS](https://reactjs.org)
 2. [Ant Design](https://ant.design)
-3. [Surge](surge.sh) was used for deployment
+3. [Surge](https://surge.sh) was used for deployment
 
 ```Powershell
 Tags: Famoco, Starwars.
