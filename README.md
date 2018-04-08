@@ -13,6 +13,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. [Surge](https://surge.sh) was used for deployment
 
 ```Powershell
-Tags: Famoco, Starwars.
+Tags: Starwars, ReactJS, Redux, Ant Design.
 ```
 
